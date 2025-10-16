@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInOpacity90 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+@theme {
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --color-primary: #00a63e;
+  --color-primaryLight: #00c950;
+  --color-primaryDark: #008236;
+  --color-secondary: #155dfc;
+  --color-secondaryLight: #2b7fff;
+  --color-secondaryDark: #1447e6;
+  --color-textPrimary: #00a63e;
+  --color-textPrimaryLight: #00c950;
+  --color-textPrimaryDark: #008236;
+  --color-textSecondary: #155dfc;
+  --color-textSecondaryLight: #2b7fff;
+  --color-textSecondaryDark: #1447e6;
+
+  --animate-slidein: slidein var(--slidein-duration, 1s) ease var(--slidein-delay, 0) forwards;
+  --animate-fadeInOpacity90: fadeInOpacity90 var(--fadein-duration, 1s) ease var(--fadein-delay, 0) forwards;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
