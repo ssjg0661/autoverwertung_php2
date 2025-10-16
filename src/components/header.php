@@ -82,8 +82,8 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     <meta name="twitter:title" content="<?php echo ${$HeaderPrefix . '_head_title'};?>">
     <meta name="twitter:description" content="<?php echo ${$HeaderPrefix . '_head_description'};?>">
     <meta name="twitter:image"
-        content="<?= $base_path ?>/images/images/<?php echo $autoverwertung_head_twitter_image; ?>.jpg">
-    <link rel="stylesheet" href="<?= $base_path ?>/styles/fontawesome/css/all.min.css">
+    content="<?= $base_path ?>/images/images/<?php echo $autoverwertung_head_twitter_image; ?>.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- base-relative asset path works in localhost subfolder and on live root -->
     <link rel="stylesheet" href="<?php echo $base_path; ?>/styles/style.css">
     <?php

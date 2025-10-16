@@ -1,6 +1,6 @@
 <?php $commonContent = include __DIR__ . '/common.php';
 $unfallwagen_head_title = "Unfallwagen Ankauf $cityName";
-$unfallwagen_head_description = "Unfallwagen Ankauf $cityName, Auto verkaufen ist unsere Expertise. Wir holen kostenlos Ihr Gebrauchtwagen ab. Und wir bereiten Ihr Fahrzeug auf, inklusive Analyse. ";
+$unfallwagen_head_description = "Unfallwagen Ankauf $cityName, Auto verkaufen ist unsere Expertise. Wir holen kostenlos Ihr Gebrauchtwagen ab. Und wir bereiten Ihr Fahrzeug auf, inklusive Analyse.";
 $unfallwagen_head_keywords = "Unfallwagen Ankauf, Autoverwertung, Auto Entsorgung, Autoverwerzerer, Ersatzteile wiederverwerten, Auto verkaufen";
 $header_nav_0_title = "Kostenlose Autoverwertung $cityName";
 $header_nav_1_title = "preiswert Motorschaden verkaufen";
