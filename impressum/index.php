@@ -1,8 +1,7 @@
-<?php 
+<?php
 require_once __DIR__ . '/../config/contentAutoverwertung.php';
-
-require_once __DIR__ . '/../src/components/header.php';
-require_once __DIR__ . '/../src/components/secondaryHero.php';
+require_once __DIR__ . '/../src/header.php';
+require_once __DIR__ . '/../src/secondaryHero.php';
 ?>
 
 <div class="container mx-auto">
@@ -71,4 +70,4 @@ require_once __DIR__ . '/../src/components/secondaryHero.php';
    </div>
 </div>
 
-<?php require_once __DIR__ . '/../src/components/footer.php'; ?>
+<?php require_once __DIR__ . '/../src/footer.php'; ?>
