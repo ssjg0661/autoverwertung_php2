@@ -1,7 +1,5 @@
 <?php
-
 $common_domain = 'https://www.deinwebportal.de';
-
 
 $cityName = 'Frankfurt';
 $phone1="0152 2614 2124";
@@ -18,13 +16,11 @@ $land = "Deutschland";
 $impressum_head_title = "Autoankauf $cityName | Impressum";
 $datenschutz_head_title = "Autoankauf $cityName | Datenschutzerklärung";
 
-
-
 $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $base_path = '';
 
 if ($host === 'localhost') {
-  $base_path = "http://localhost/Autoverwertung";   
+  $base_path = "http://localhost/NEU";   
 } else {
   $base_path = "";
 }
