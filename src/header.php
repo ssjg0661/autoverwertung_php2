@@ -52,8 +52,7 @@ $HeaderPrefix      = $headerKeys[$currentPage] ?? 'autoverwertung';
 $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$currentPage] ?? 'autoverwertung';
 
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -164,13 +163,6 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
         <!-- Mobile Sidebar Menu -->
         <nav id="mobileNav" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50">
             <div class="flex flex-col h-full">
-                <!-- Close Button -->
-                <div class="flex justify-end p-4 border-b">
-                    <button id="navClose" class="text-2xl focus:outline-none" aria-label="Menü schließen">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-
                 <!-- Navigation Links -->
                 <div class="flex flex-col p-4 space-y-4">
                     <a href="<?= $base_path ?>/" class="py-3 px-4 hover:bg-gray-100 rounded transition duration-200"
@@ -202,24 +194,23 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     </header>
 
     <!-- Mobile Phone Number Display -->
-<!-- Mobile Phone Bar - Clickable -->
-<div class="mobile-phone-bar">
-    <a href="tel:<?= $phone3 ?>" class="mobile-phone-link" title="Jetzt anrufen">
-        <div class="mobile-phone-icon-wrapper">
-            <i class="fas fa-phone-alt mobile-phone-icon"></i>
-        </div>
-        <div class="mobile-phone-content">
-            <span class="mobile-phone-label">Jetzt anrufen</span>
-            <span class="mobile-phone-number"><?= $phone1 ?></span>
-        </div>
-    </a>
-</div>
+    <!-- Mobile Phone Bar - Clickable -->
+    <div class="mobile-phone-bar">
+        <a href="tel:<?= $phone3 ?>" class="mobile-phone-link" title="Jetzt anrufen">
+            <div class="mobile-phone-icon-wrapper">
+                <i class="fas fa-phone-alt mobile-phone-icon"></i>
+            </div>
+            <div class="mobile-phone-content">
+                <span class="mobile-phone-label">Jetzt anrufen</span>
+                <span class="mobile-phone-number"><?= $phone1 ?></span>
+            </div>
+        </a>
+    </div>
     
 
     <script>
     // Mobile navigation toggle
     const navToggle = document.getElementById('navToggle');
-    const navClose = document.getElementById('navClose');
     const mobileNav = document.getElementById('mobileNav');
     const mobileOverlay = document.getElementById('mobileOverlay');
 
@@ -235,8 +226,18 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
         document.body.style.overflow = '';
     }
 
-    navToggle.addEventListener('click', openNav);
-    navClose.addEventListener('click', closeNav);
+    function toggleNav() {
+        if (mobileNav.classList.contains('open')) {
+            closeNav();
+        } else {
+            openNav();
+        }
+    }
+
+    // Toggle navigation on hamburger click
+    navToggle.addEventListener('click', toggleNav);
+    
+    // Close on overlay click (clicking outside)
     mobileOverlay.addEventListener('click', closeNav);
 
     // Close on link click
@@ -245,3 +246,5 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
         link.addEventListener('click', closeNav);
     });
     </script>
+</body>
+</html>

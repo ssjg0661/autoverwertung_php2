@@ -12,7 +12,7 @@ $widget3 = [
                 <i class="fa-solid fa-hand-holding-dollar text-9xl text-primary"></i>
             </div>
             <div class="flex flex-col xl:w-50">
-                <h2 class="text-4xl md:text-4xl font-bold leading-tight mb-4"><?php echo $widget3['sectionTitle']; ?></h2>
+                <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4"><?php echo $widget3['sectionTitle']; ?></h2>
                 <p class="text-lg md:text-xl leading-relaxed"><?php echo $widget3['description']; ?></p>
             </div>
         </div>

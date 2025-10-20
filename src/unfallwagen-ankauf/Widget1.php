@@ -13,7 +13,7 @@ for ($i = 0; $i < 4; $i++) {
 ?>
 
 <div class=" mt-25 sm:mt-48 space-y-8">
-    <h2 class="mb-15 text-4xl font-bold text-primary w-full">
+    <h2 class="mb-15 text-3xl md:text-4xl font-bold text-primary w-full">
         <?php echo $widget1['sectionTitle']; ?>
     </h2>
     <div class="items-center flex flex-dep-on-screen gap-4">

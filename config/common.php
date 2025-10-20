@@ -20,7 +20,7 @@ $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $base_path = '';
 
 if ($host === 'localhost') {
-  $base_path = "http://localhost/NEU";   
+  $base_path = "http://localhost/autoverwertung_php";   
 } else {
   $base_path = "";
 }

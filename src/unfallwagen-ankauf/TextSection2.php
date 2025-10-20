@@ -31,7 +31,7 @@ for ($i = 0; $i < 2; $i++) {
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Car Selling Process -->
             <div class="space-y-8">
-                <h2 class="text-4xl font-bold text-primary w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary w-full">
                     <?php echo $carSellingProcess['title']; ?>
                 </h2>
                 <?php foreach ($carSellingProcess['content'] as $item): ?>
@@ -43,7 +43,7 @@ for ($i = 0; $i < 2; $i++) {
 
             <!-- Customer Trust and Support -->
             <div class="space-y-8">
-                <h2 class="text-4xl font-bold text-primary w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary w-full">
                     <?php echo $customerTrustAndSupport['title']; ?>
                 </h2>
                 <?php foreach ($customerTrustAndSupport['content'] as $item): ?>

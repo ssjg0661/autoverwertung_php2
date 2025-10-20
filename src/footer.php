@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/../../config/common.php';
+include __DIR__ . '/../config/common.php';
 ?>
 <footer class="bg-gray-800 py-8 sm:py-10 lg:py-12 mt-48 text-white">
     <div class="container mx-auto px-6 sm:px-8 lg:px-12">

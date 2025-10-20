@@ -39,7 +39,7 @@ for ($i = 0; $i < 2; $i++) {
                 <?php endforeach; ?>
             </div>
             <div class="space-y-8">
-                <h2 class="text-4xl font-bold text-primary w-full"><?php echo $customerTrustAndSupport['title']; ?></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary w-full"><?php echo $customerTrustAndSupport['title']; ?></h2>
                 <?php foreach ($customerTrustAndSupport['content'] as $item): ?>
                 <p class="text-lg md:text-xl leading-relaxed"><?php echo $item['text']; ?></p>
                 <?php endforeach; ?>

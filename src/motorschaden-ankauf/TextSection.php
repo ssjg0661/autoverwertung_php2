@@ -10,7 +10,7 @@ $textSection1_sustainabilitySection_description = $motorschaden_textSection1_sus
 <section id="text-section-1"
     class="relative mt-25 sm:mt-48 py-10 px-8 sm:px-10 md:px-14 lg:px-20 bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-lg shadow-xl scroll-mt-16 text-gray-800">
     <div class="max-w-5xl mx-auto text-center space-y-6">
-        <h2 class="text-4xl md:text-4xl font-extrabold leading-tight"><?php echo $textSection1_mainSection_title; ?>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight"><?php echo $textSection1_mainSection_title; ?>
         </h2>
         <p class="text-lg md:text-xl leading-relaxed"><?php echo $textSection1_mainSection_description; ?></p>
         <a href="tel:<?= $phone3 ?>" target="_blank"

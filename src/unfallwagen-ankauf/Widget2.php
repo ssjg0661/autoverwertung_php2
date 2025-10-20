@@ -9,7 +9,7 @@ $widget2 = [
 
 <div class=" mt-25 sm:mt-48">
     <div class="text-center flex flex-col items-center bg-gray-50 p-16">
-        <h2 class="text-4xl md:text-4xl leading-tight text-primary font-bold mb-6">
+        <h2 class="text-3xl md:text-4xl leading-tight text-primary font-bold mb-6">
             <?php echo $widget2['sectionTitle']; ?>
         </h2>
         <h3 class="text-2xl md:text-2xl"><?php echo $widget2['subtitle']; ?></h3>
