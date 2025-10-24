@@ -13,7 +13,7 @@ $icons = ['fa-paper-plane', 'fa-calendar-alt', 'fa-car', 'fa-certificate', 'fa-r
 ?>
 
 <section id="process" class="relative mt-25 sm:mt-48">
-    <div class="relative max-w-5xl mx-auto rounded-lg">
+    <div class="relative max-w-5xl mx-auto rounded-lg container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-15"><?php echo $processStepsSection_title; ?></h2>
         <div class="space-y-8">
             <?php foreach ($processSteps as $index => $step): ?>

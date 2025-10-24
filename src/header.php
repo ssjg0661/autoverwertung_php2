@@ -36,13 +36,13 @@ $header_nav_2_title   = $header_nav_2_title   ?? 'Unfallwagen Ankauf';
 $headerKeys = [
   'autoverwertung'        => 'autoverwertung',
   'motorschaden-ankauf'   => 'motorschaden',
-  'unfallwagen-ankauf'    => 'unfallwagen',
+  'schrottauto-ankauf'    => 'unfallwagen',
 ];
 
 $headerKeys_imp_dat  = [
   'autoverwertung'        => 'autoverwertung',
   'motorschaden-ankauf'   => 'motorschaden',
-  'unfallwagen-ankauf'    => 'unfallwagen',
+  'schrottauto-ankauf'    => 'unfallwagen',
   'impressum'    => 'impressum',
   'datenschutz'    => 'datenschutz',
 
@@ -75,13 +75,13 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     <meta property="og:title" content="<?php echo ${$HeaderPrefix . '_head_title'};?>">
     <meta property="og:description" content="<?php echo ${$HeaderPrefix . '_head_description'};?>">
     <meta property="og:image"
-        content="<?= $base_path ?>/images/images/<?php echo $autoverwertung_head_og_image; ?>.jpg">
+        content="<?= $base_path ?>/images/auto-verkaufen.jpg>
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<?= $canonicalUrl ?>">
     <meta name="twitter:title" content="<?php echo ${$HeaderPrefix . '_head_title'};?>">
     <meta name="twitter:description" content="<?php echo ${$HeaderPrefix . '_head_description'};?>">
     <meta name="twitter:image"
-    content="<?= $base_path ?>/images/images/<?php echo $autoverwertung_head_twitter_image; ?>.jpg">
+    content="<?= $base_path ?>/images/auto-verkaufen.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- base-relative asset path works in localhost subfolder and on live root -->
     <link rel="stylesheet" href="<?php echo $base_path; ?>/styles/style.min.css">
@@ -145,8 +145,8 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
                     title="<?= $header_nav_0_title ?>">Autoverwertung</a>
                 <a href="<?= $base_path ?>/motorschaden-ankauf/" class="hover:text-primary hover:cursor-pointer"
                     title="<?= $header_nav_1_title ?>">Motorschaden Ankauf</a>
-                <a href="<?= $base_path ?>/unfallwagen-ankauf/" class="hover:text-primary hover:cursor-pointer"
-                    title="<?= $header_nav_2_title ?>">Unfallwagen Ankauf</a>
+                <a href="<?= $base_path ?>/schrottauto-ankauf/" class="hover:text-primary hover:cursor-pointer"
+                    title="<?= $header_nav_2_title ?>">Schrottauto Ankauf</a>
             </nav>
 
             <a href="tel:<?= $phone3 ?>"
@@ -174,10 +174,10 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
                         title="<?= $header_nav_1_title ?>">
                         <i class="fas fa-wrench mr-2"></i>Motorschaden Ankauf
                     </a>
-                    <a href="<?= $base_path ?>/unfallwagen-ankauf/"
+                    <a href="<?= $base_path ?>/schrottauto-ankauf/"
                         class="py-3 px-4 hover:bg-gray-100 rounded transition duration-200"
                         title="<?= $header_nav_2_title ?>">
-                        <i class="fas fa-car-crash mr-2"></i>Unfallwagen Ankauf
+                        <i class="fas fa-car-crash mr-2"></i>Schrottauto Ankauf
                     </a>
                 </div>
 

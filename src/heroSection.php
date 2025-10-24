@@ -6,7 +6,7 @@
         <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"><?= ${$HeaderPrefix."_heroSection_title"} ?></h1>
             <p class="text-lg md:text-xl mb-4"><?= ${$HeaderPrefix."_heroSection_description"} ?></p>
-            <p class="text-lg md:text-xl"><?= ${$HeaderPrefix."_heroSection_inquiryText"} ?></p>
+            <!-- <p class="text-lg md:text-xl"><?= ${$HeaderPrefix."_heroSection_inquiryText"} ?></p> -->
         </div>
         <div
             class="bg-slate-50 text-black p-4 sm:p-6 md:p-8 rounded-lg shadow-lg w-full md:w-1/2 lg:w-2/5 mt-8 md:mt-0">

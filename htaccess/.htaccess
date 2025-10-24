@@ -9,10 +9,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
 
-# Redirect gebrauchtwagen-ankauf.php to auto-verkaufen.php and unfallauto-ankauf.php to unfallwagen-ankauf.php
-RewriteRule ^unfallauto-ankauf.php$ /unfallwagen-ankauf.php [R=301,L]
-RewriteRule ^service.php$ / [R=301,L]
-
 # Redirect URLs with trailing /index.html to URLs without it
 RewriteCond %{THE_REQUEST} /index\.php [NC]
 RewriteRule ^index\.php$ / [L,R=301]
