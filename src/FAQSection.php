@@ -3,7 +3,7 @@
 $heroKeys = [
   'autoverwertung'        => 'autoverwertung',
   'motorschaden-ankauf'   => 'motorschaden',
-  'unfallwagen-ankauf'    => 'unfallwagen',
+  'schrottauto-ankauf'    => 'unfallwagen',
 ];
 $heroPrefix      = $heroKeys[$currentPage] ?? 'autoverwertung';
 
