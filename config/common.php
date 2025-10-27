@@ -1,7 +1,7 @@
 <?php
 $common_domain = 'https://www.deinwebportal.de';
 
-$cityName = 'Frankfurt';
+$cityName = 'Tripoli';
 $phone1="0152 2614 2124";
 $phone2="4915226142124";
 $phone3="+4915226142124";
@@ -20,7 +20,7 @@ $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $base_path = '';
 
 if ($host === 'localhost') {
-  $base_path = "http://localhost//Projekt%20Autoankauf/Autoverwertung";   
+  $base_path = "http://localhost//Projekt%20Autoankauf/Autoverwertung/Gruppe1/MUSTER/";   
 } else {
   $base_path = "";
 }
