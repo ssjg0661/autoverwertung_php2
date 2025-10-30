@@ -81,7 +81,7 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     <meta name="twitter:image"
     content="<?= $base_path ?>/images/auto-verkaufen.jpg">
     <!-- base-relative asset path works in localhost subfolder and on live root -->
-    <link rel="stylesheet" href="<?php echo $base_path; ?>/styles/style.css">
+    <link rel="stylesheet" href="<?php echo $base_path; ?>/styles/style.min.css">
     <?php
     $faqQuestions = [];
     $faqVarName = $HeaderPrefix . '_faq_1_questions';
