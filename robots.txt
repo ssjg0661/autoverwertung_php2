@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Disallow: /impressum
+Disallow: /datenschutz
+
+Sitemap: https://www.autoverwertung-siegburg.de/sitemap.xml

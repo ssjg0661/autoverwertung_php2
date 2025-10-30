@@ -40,7 +40,7 @@ $customerTrustAndSupport_cta_text = $autoverwertung_customerTrustAndSupport_cta_
             </div>
         </div>
         <div class="mt-12 text-center">
-            <a href="mailto:<?= $email ?>"
+            <a href="#inquiry-form-container"
                 class="text-lg md:text-xl bg-secondary text-white py-3 px-4 font-semibold hover:bg-secondaryDark inline-flex items-center w-auto self-start rounded-lg"
                 title="<?php echo $customerTrustAndSupport_cta_title; ?>">
                 <?php echo $customerTrustAndSupport_cta_text; ?>

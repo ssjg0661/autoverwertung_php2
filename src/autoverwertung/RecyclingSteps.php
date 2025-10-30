@@ -20,8 +20,8 @@ $icons = ['fa-paper-plane', 'fa-calendar-alt', 'fa-car', 'fa-certificate', 'fa-r
             <div
                 class="bg-white shadow-lg rounded-lg p-4 sm:p-6 flex flex-col sm:flex-row items-center sm:items-center">
                 <div
-                    class="text-xl aspect-ratio-1-1 w-16 h-12 flex items-center justify-center bg-primary text-white rounded-full mb-4 sm:mb-0 sm:mr-4">
-                    <i class="fas <?php echo $icons[$index % count($icons)]; ?>"></i>
+                    class="text-xl sm:text-2xl font-bold aspect-ratio-1-1 w-16 h-12 flex items-center justify-center bg-primary text-white rounded-full mb-4 sm:mb-0 sm:mr-4">
+                    <?php echo $index +1; ?>
                 </div>
                 <div class="text-center sm:text-left">
                     <h3 class="mb-1 text-xl sm:text-2xl font-semibold text-gray-800"><?php echo $step['title']; ?></h3>

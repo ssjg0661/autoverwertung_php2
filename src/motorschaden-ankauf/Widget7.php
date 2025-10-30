@@ -30,8 +30,8 @@ $iconMap = ['fa-paper-plane', 'fa-euro-sign', 'fa-check-circle', 'fa-car'];
 
             <!-- Center column with icon and line -->
             <div class="flex flex-col items-center gap-4 flex-shrink-0">
-                <div class="w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full shadow-lg">
-                    <i class="fas <?php echo $iconMap[$index % count($iconMap)]; ?> fa-xl"></i>
+                <div class="text-xl font-bold w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full shadow-lg">
+                    <?php echo $index +1; ?>
                 </div>
                 <?php if ($index < count($widget7_steps) - 1): ?>
                 <div class="w-0.5 h-16 bg-primary"></div>

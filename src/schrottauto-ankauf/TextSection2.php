@@ -52,7 +52,7 @@ for ($i = 0; $i < 2; $i++) {
                 </p>
                 <?php endforeach; ?>
                 <div class="mt-6">
-                    <a href="mailto:<?= $email ?>"
+                    <a href="#inquiry-form-container"
                         class="text-lg md:text-xl bg-secondary text-white py-3 px-4 font-semibold hover:bg-secondaryDark inline-flex items-center w-auto self-start rounded-lg"
                         title="<?php echo $customerTrustAndSupport['cta']['title']; ?>">
                         <?php echo $customerTrustAndSupport['cta']['text']; ?>

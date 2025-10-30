@@ -25,7 +25,7 @@ for ($i = 0; $i < 3; $i++) {
                     <div class="rounded-full mr-4 flex-shrink-0">
                         <span class="text-3xl"><?php echo $testimonial['avatar']; ?></span>
                     </div>
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800"><?php echo $testimonial['name']; ?></h3>
+                    <p class="text-xl md:text-2xl font-semibold text-gray-800"><?php echo $testimonial['name']; ?></p>
                 </div>
                 <p class="text-gray-600 italic text-lg md:text-xl flex-grow leading-relaxed mb-4">
                     <?php echo $testimonial['feedback']; ?></p>

@@ -40,7 +40,6 @@ $iconSvgs = [
 <section class="container mt-25 sm:mt-48 scroll-mt-16 mx-auto flex flex-wrap items-center gap-8">
 
     <div class="flex-1 min-w-[250px] pr-5 mb-8">
-        <h5 class="text-2xl font-semibold mb-4"><?php echo $widget12_featuresTitle; ?></h5>
         <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4"><?php echo $widget12_sectionTitle; ?></h2>
         <p class="text-lg md:text-xl leading-relaxed"><?php echo $widget12_sectionDescription; ?></p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-3 mt-5">
