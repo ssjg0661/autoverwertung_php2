@@ -25,7 +25,7 @@ while (isset(${$heroPrefix . '_faq_1_questions_' . $i . '_question'})) {
         <?php foreach ($faq_questions as $index => $item): ?>
         <div class="p-4 sm:p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow">
             <div class="flex justify-between items-center cursor-pointer faq-question">
-                <h3 class="text-xl sm:text-2xl font-semibold"><?php echo $item['question']; ?></h3>
+                <p class="text-xl sm:text-2xl font-semibold"><?php echo $item['question']; ?></p>
                 <span class="text-xl sm:text-2xl faq-toggle">+</span>
             </div>
             <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out;">

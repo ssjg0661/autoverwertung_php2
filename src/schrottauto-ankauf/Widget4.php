@@ -13,7 +13,7 @@ $widget4 = [
 
 <div class=" mt-25 sm:mt-48">
     <div class="flex xl:flex-row flex-col">
-        <div class="xl:w-100 flex flex-col gap-14 py-12 bg-gray-50">
+        <div class="xl:w-100 flex flex-col gap-14 py-12 px-8 bg-gray-50">
             <div class="flex flex-col gap-4">
                 <h2 class="text-primary text-3xl md:text-4xl font-bold leading-tight mb-4">
                     <?php echo $widget4['mainTitle']; ?>

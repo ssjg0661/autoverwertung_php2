@@ -50,11 +50,10 @@ $headerKeys_imp_dat  = [
 
 $HeaderPrefix      = $headerKeys[$currentPage] ?? 'autoverwertung';
 $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$currentPage] ?? 'autoverwertung';
+?>
 
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,17 +73,15 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     <meta property="og:url" content="<?= $canonicalUrl ?>">
     <meta property="og:title" content="<?php echo ${$HeaderPrefix . '_head_title'};?>">
     <meta property="og:description" content="<?php echo ${$HeaderPrefix . '_head_description'};?>">
-    <meta property="og:image"
-        content="<?= $base_path ?>/images/auto-verkaufen.jpg>
+    <meta property="og:image" content="<?= $base_path ?>/images/auto-verkaufen.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<?= $canonicalUrl ?>">
     <meta name="twitter:title" content="<?php echo ${$HeaderPrefix . '_head_title'};?>">
     <meta name="twitter:description" content="<?php echo ${$HeaderPrefix . '_head_description'};?>">
     <meta name="twitter:image"
     content="<?= $base_path ?>/images/auto-verkaufen.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- base-relative asset path works in localhost subfolder and on live root -->
-    <link rel="stylesheet" href="<?php echo $base_path; ?>/styles/style.min.css">
+    <link rel="stylesheet" href="<?php echo $base_path; ?>/styles/style.css">
     <?php
     $faqQuestions = [];
     $faqVarName = $HeaderPrefix . '_faq_1_questions';
@@ -124,7 +121,6 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     echo '<script type="application/ld+json">' . $jsonSchema . '</script>';
     ?>
 </head>
-
 <body>
     <header class="sticky top-0 z-50 bg-white shadow">
         <div class="container mx-auto flex items-center justify-between p-4">
@@ -134,8 +130,8 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
             </div>
 
             <div class="flex items-center md:hidden">
-                <button class="text-2xl focus:outline-none" aria-label="Menü öffnen" id="navToggle">
-                    <i class="fas fa-bars"></i>
+                <button class="text-2xl focus:outline-none" aria-label="Menü öffnen" id="navToggle">                
+                   <svg  enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m3 6h18c1.105 0 2-.895 2-2s-.895-2-2-2h-18c-1.105 0-2 .895-2 2s.895 2 2 2zm18 4h-18c-1.105 0-2 .895-2 2s.895 2 2 2h18c1.105 0 2-.895 2-2s-.895-2-2-2zm0 8h-18c-1.105 0-2 .895-2 2s.895 2 2 2h18c1.105 0 2-.895 2-2s-.895-2-2-2z"/></svg>
                 </button>
             </div>
 
@@ -150,9 +146,12 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
             </nav>
 
             <a href="tel:<?= $phone3 ?>"
-                class="font-bold hidden md:flex items-center px-4 py-2 bg-primary text-white rounded hover:bg-primaryDark transition duration-300"
+                class="gap-2 text-lg font-bold hidden md:flex items-center px-4 py-2 bg-primary text-white rounded hover:bg-primaryDark transition duration-300"
                 title="Jetzt anrufen">
-                <i class="fas fa-phone-alt mr-2"></i><?= $phone1 ?>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="white" d="M12.2 10c-1.1-0.1-1.7 1.4-2.5 1.8-1.3 0.7-3.7-1.8-3.7-1.8s-2.5-2.4-1.9-3.7c0.5-0.8 2-1.4 1.9-2.5-0.1-1-2.3-4.6-3.4-3.6-2.4 2.2-2.6 3.1-2.6 4.9-0.1 3.1 3.9 7 3.9 7 0.4 0.4 3.9 4 7 3.9 1.8 0 2.7-0.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"></path>
+                </svg>
+                <?= $phone1 ?>
             </a>
         </div>
 
@@ -167,17 +166,17 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
                 <div class="flex flex-col p-4 space-y-4">
                     <a href="<?= $base_path ?>/" class="py-3 px-4 hover:bg-gray-100 rounded transition duration-200"
                         title="<?= $header_nav_0_title ?>">
-                        <i class="fas fa-car mr-2"></i>Autoverwertung
+                        Autoverwertung
                     </a>
                     <a href="<?= $base_path ?>/motorschaden-ankauf/"
                         class="py-3 px-4 hover:bg-gray-100 rounded transition duration-200"
                         title="<?= $header_nav_1_title ?>">
-                        <i class="fas fa-wrench mr-2"></i>Motorschaden Ankauf
+                        Motorschaden Ankauf
                     </a>
                     <a href="<?= $base_path ?>/schrottauto-ankauf/"
                         class="py-3 px-4 hover:bg-gray-100 rounded transition duration-200"
                         title="<?= $header_nav_2_title ?>">
-                        <i class="fas fa-car-crash mr-2"></i>Schrottauto Ankauf
+                        Schrottauto Ankauf
                     </a>
                 </div>
 
@@ -186,7 +185,7 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
                     <a href="tel:<?= $phone3 ?>"
                         class="font-bold flex items-center justify-center px-4 py-3 bg-primary text-white rounded hover:bg-primaryDark transition duration-300 w-full"
                         title="<?= $header_phone_title ?? 'Jetzt anrufen' ?>">
-                        <i class="fas fa-phone-alt mr-2"></i><?= $phone1 ?>
+                        <?= $phone1 ?>
                     </a>
                 </div>
             </div>
@@ -198,7 +197,9 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     <div class="mobile-phone-bar">
         <a href="tel:<?= $phone3 ?>" class="mobile-phone-link" title="Jetzt anrufen">
             <div class="mobile-phone-icon-wrapper">
-                <i class="fas fa-phone-alt mobile-phone-icon"></i>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 16 16">
+                <path fill="white" d="M12.2 10c-1.1-0.1-1.7 1.4-2.5 1.8-1.3 0.7-3.7-1.8-3.7-1.8s-2.5-2.4-1.9-3.7c0.5-0.8 2-1.4 1.9-2.5-0.1-1-2.3-4.6-3.4-3.6-2.4 2.2-2.6 3.1-2.6 4.9-0.1 3.1 3.9 7 3.9 7 0.4 0.4 3.9 4 7 3.9 1.8 0 2.7-0.2 4.9-2.6 1-1.1-2.5-3.3-3.6-3.4z"></path>
+                </svg>
             </div>
             <div class="mobile-phone-content">
                 <span class="mobile-phone-label">Jetzt anrufen</span>
@@ -246,5 +247,3 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
         link.addEventListener('click', closeNav);
     });
     </script>
-</body>
-</html>

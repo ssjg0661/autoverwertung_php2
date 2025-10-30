@@ -40,9 +40,5 @@ $widget3_imageTitle = $motorschaden_widget3_imageTitle;
                 <?php endforeach; ?>
             </div>
         </div>
-        <div class="xl:w-50 bg-black flex items-center justify-center">
-            <img class="w-full h-full" src="<?= $base_path ?>/images/<?php echo $widget3_image; ?>.jpg"
-                alt="<?php echo $widget3_imageAlt; ?>" title="<?php echo $widget3_imageTitle; ?>">
-        </div>
     </div>
 </section>

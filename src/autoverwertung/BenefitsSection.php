@@ -20,10 +20,7 @@ $iconMap = ['fa-paper-plane', 'fa-money-check-alt', 'fa-leaf', 'fa-truck', 'fa-s
             <?php foreach ($benefitsSection_benefits as $index => $benefit): ?>
             <div
                 class="p-4 sm:p-6 bg-gray-50 border rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between h-full">
-                <div class="flex items-center mb-4 h-14">
-                    <div class="mr-4">
-                        <i class="fas <?php echo $iconMap[$index % count($iconMap)]; ?> fa-lg text-primary"></i>
-                    </div>
+                <div class="flex justify-center mb-4 h-14">
                     <h3 class="text-xl sm:text-2xl font-semibold text-primary"><?php echo $benefit['title']; ?></h3>
                 </div>
                 <div class="flex-grow">
