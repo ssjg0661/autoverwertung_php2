@@ -1,4 +1,6 @@
 <?php
+
+$url = 'autoverwertung-siegburg.de';
 $cityName = 'Siegburg';
 $phone1="0152 2614 2124";
 $phone2="4915226142124";

@@ -67,6 +67,19 @@ $HeaderPrefix_imp_dat  = $headerKeys[$currentPage] ?? $headerKeys_imp_dat[$curre
     <title><?php echo ${$HeaderPrefix_imp_dat . '_head_title'};?></title>
     <meta name="description" content=" <?php echo ${$HeaderPrefix . '_head_description'}; ?>">
     <meta name="keywords" content="<?php echo ${$HeaderPrefix . '_head_keywords'}; ?>">
+
+    <meta name="googlebot" content="follow">
+    <meta name="rights" content="">
+    <meta name="robots" content="index,follow,noodp,noydir">
+    <meta name="generator" content="">
+    <meta name="author" content="<?= $url ?>">
+    <meta name="revisit-after" content="5 days">
+    <meta name="copyright" content="<?= $url ?>">
+    <meta name="audience" content="kinder, erwachsene, ältere">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="page-topic" content="Autowervertung, Autoverschrottung">
+    <meta name="format-detection" content="telephone=no">
+
     <!-- Canonical / Social -->
     <link rel="canonical" href="<?= $canonicalUrl ?>">
     <meta property="og:type" content="website">
